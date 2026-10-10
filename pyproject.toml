@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "travel-agent-api"
+version = "1.0.0"
+description = "Travel Agent API built with FastAPI, LangChain and LangGraph."
+authors = ["Mattia Sammarco"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+fastapi = "*"
+uvicorn = "*"
+openai = "*"
+langchain-openai = "*"
+langchain-community = "*"
+langgraph = "*"
+langchain-core = "*"
+pydantic = "*"
+python-dotenv = "*"
+google-search-results = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+httpx = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
